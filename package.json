@@ -1,0 +1,28 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "A simple Typescript starter - bare minimum",
+  "engines": {
+    "node": ">= 8.11",
+    "npm": ">= 6.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanoMagrassi/ts-starter.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "starter"
+  ],
+  "author": "StefanoMagrassi <stefano.magrassi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StefanoMagrassi/ts-starter/issues"
+  },
+  "homepage": "https://github.com/StefanoMagrassi/ts-starter#readme"
+}
