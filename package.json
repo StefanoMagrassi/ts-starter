@@ -6,7 +6,7 @@
     "node": ">= 8.11",
     "npm": ">= 6.2"
   },
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"No tests\""
   },
