@@ -1,0 +1,17 @@
+{
+  "automock": false,
+  "bail": true,
+  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/"],
+  "coverageReporters": ["text"],
+  "roots": ["<rootDir>/test/"],
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "testRegex": "(\\.|/)spec\\.(js|ts)$",
+  "moduleFileExtensions": ["ts", "js", "json", "node"],
+  "globals": {
+    "ts-jest": {
+      "enableTsDiagnostics": true
+    }
+  }
+}

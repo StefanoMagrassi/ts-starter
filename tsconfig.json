@@ -2,10 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "lib": ["es6"],
     "sourceMap": true,
+    "inlineSources": true,
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -13,5 +15,5 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./index.ts"]
+  "include": ["./src/**/*"]
 }

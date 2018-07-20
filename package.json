@@ -1,14 +1,28 @@
 {
-  "name": "ts-starter",
+  "name": "@stefano_magrassi/ts-starter",
   "version": "1.0.0",
   "description": "A simple Typescript starter - bare minimum",
   "engines": {
     "node": ">= 8.11",
     "npm": ">= 6.2"
   },
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "typings": "lib/index.ts",
+  "files": [
+    "lib",
+    "tpl"
+  ],
+  "bin": {
+    "ts-starter": "lib/bin.js"
+  },
   "scripts": {
-    "test": "echo \"No tests\""
+    "precommit": "pretty-quick --staged",
+    "lint": "tslint -p .",
+    "pretest": "npm run lint",
+    "test": "echo \"No tests\"",
+    "prebuild": "rimraf ./lib",
+    "build": "tsc -p .",
+    "prepublishOnly": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +38,26 @@
   "bugs": {
     "url": "https://github.com/StefanoMagrassi/ts-starter/issues"
   },
-  "homepage": "https://github.com/StefanoMagrassi/ts-starter#readme"
+  "homepage": "https://github.com/StefanoMagrassi/ts-starter#readme",
+  "devDependencies": {
+    "@contactlab/tslint-config": "1.1.0",
+    "@types/chalk": "2.2.0",
+    "@types/glob": "5.0.35",
+    "@types/node": "10.5.2",
+    "@types/through2": "2.0.33",
+    "chalk": "2.4.1",
+    "glob": "7.1.2",
+    "husky": "0.14.3",
+    "prettier": "1.13.7",
+    "pretty-quick": "1.6.0",
+    "rimraf": "2.6.2",
+    "through2": "2.0.3",
+    "ts-node": "7.0.0",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.13.0",
+    "typescript": "2.9.2"
+  },
+  "dependencies": {
+    "fp-ts": "1.7.1"
+  }
 }

@@ -1,0 +1,15 @@
+[
+  "@contactlab/tslint-config",
+  "@types/jest",
+  "@types/node",
+  "husky",
+  "jest",
+  "prettier",
+  "pretty-quick",
+  "rimraf",
+  "ts-jest",
+  "ts-node",
+  "tslint",
+  "tslint-config-prettier",
+  "typescript"
+]

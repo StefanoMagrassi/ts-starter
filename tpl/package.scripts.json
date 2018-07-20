@@ -1,0 +1,10 @@
+{
+  "precommit": "pretty-quick --staged",
+  "lint": "tslint -p .",
+  "jest": "jest --ci --coverage",
+  "pretest": "npm run lint",
+  "test": "npm run jest",
+  "prebuild": "rimraf ./dist",
+  "build": "tsc -p .",
+  "prepublishOnly": "npm test && npm run build"
+}
